@@ -4,9 +4,11 @@ var _  = require("underscore");
 var def  = require("./config/default");
 var router = require('./routes');
 
+// View Engine
 app.set('views', __dirname + './views');
 app.set('view engine', 'ejs');
 
+// Daisy Route
 app.get('/daisy', router.invokeMe, router.daisy);
 
 var server = app.listen(3000, function () {
