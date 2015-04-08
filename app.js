@@ -11,6 +11,7 @@ app.set('view engine', 'ejs');
 // Daisy Route
 app.get('/daisy', router.invokeMe, router.daisy);
 
+console.log("Starting server");
 var server = app.listen(3000, function () {
 
   var host = server.address().address;
