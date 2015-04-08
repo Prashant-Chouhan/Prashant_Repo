@@ -1,0 +1,11 @@
+{
+  "name": "Daisy",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+  "express": "^4.12.2",
+  "ejs": "^2.2.4",
+  "underscore": "1.6.0",
+  "path": "^0.4.9"
+  }
+}
