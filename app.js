@@ -1,23 +1,23 @@
-var express = require('express');
-var app = express();
-var _  = require("underscore");
-var def  = require("./config/default");
-var router = require('./routes');
+var app = require('./lib/api/gateway');
 
-// View Engine
-app.set('views', __dirname + './views');
-app.set('view engine', 'ejs');
-
-// Daisy Route
-app.get('/daisy', router.invokeMe, router.daisy);
-
+<<<<<<< HEAD
+var routes ={};
+ 
+ 	routes['daisy'] = require('./modules/daisy/daisy');
+=======
 console.log("Starting server");
 var server = app.listen(3000, function () {
+>>>>>>> master
 
-  var host = server.address().address;
-  var port = server.address().port;
+/*var _  = require("underscore");
+var def  = require("./config/default");
+var router = require('./routes');
+var daisy = require('./modules/daisy/app');*/
 
-  console.log('Example app listening at http://%s:%s', host, port);
 
+app.use('/', function(req, res, next){
+	res.send(200);
 });
+
+module.exports = app;
 
