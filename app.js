@@ -1,13 +1,10 @@
 var app = require('./lib/api/gateway');
 
-<<<<<<< HEAD
 var routes ={};
  
  	routes['daisy'] = require('./modules/daisy/daisy');
-=======
 console.log("Starting server");
-var server = app.listen(3000, function () {
->>>>>>> master
+ 
 
 /*var _  = require("underscore");
 var def  = require("./config/default");
